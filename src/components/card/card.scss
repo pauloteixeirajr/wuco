@@ -1,0 +1,27 @@
+.card {
+  display: inline-block;
+  margin: 1rem;
+  padding: 2.5rem;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  width: calc((100% - 3 * 5rem) / 3);
+  color: rgba(0, 0, 0, 0.54);
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+
+  &-title {
+    color: #fb8c00;
+    &::after {
+      display: block;
+      content: " ";
+      height: 1px;
+      border-bottom: 1px solid #ddd;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.03);
+  }
+}

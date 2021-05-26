@@ -1,0 +1,90 @@
+header {
+  border-bottom: 1px solid #ddd;
+
+  &.sticky-nav {
+    & div {
+      padding: 0.4rem;
+    }
+    .link {
+      font-size: large !important;
+    }
+  }
+
+  & div {
+    margin: 0 auto;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+
+    & .logo-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .links {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 45%;
+
+      & .link {
+        color: #fb8c00;
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: bold;
+
+        &:hover {
+          color: #b96702;
+        }
+      }
+    }
+
+    & .logo {
+      margin: 0;
+      padding: 0;
+      background-image: url("../../assets/images/logo.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}
+
+/* Sticky Nav */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+
+.sticky-nav .main-nav {
+  margin-top: 19px;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited {
+  padding: 17px 0;
+  color: #555;
+}
+
+.sticky-nav .logo-black {
+  display: block;
+}
+
+.sticky-nav .logo {
+  height: 2rem;
+  width: 2rem;
+}

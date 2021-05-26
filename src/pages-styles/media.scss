@@ -1,0 +1,193 @@
+@media only screen and (max-width: 1400px) {
+  header {
+    & div {
+      .links {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .training-section {
+    height: 100%;
+
+    .card {
+      width: calc((100% - 2 * 5rem) / 2);
+    }
+  }
+
+  .contact-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .follow-section {
+    & .section-children {
+      flex-direction: column;
+      justify-content: center;
+
+      iframe {
+        margin: 1rem auto;
+        max-height: 70vh;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  header {
+    & div {
+      .links {
+        width: 40%;
+        .link {
+          font-size: medium;
+        }
+      }
+      .logo {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    & div {
+      .links {
+        width: 40%;
+        .link {
+          font-size: small;
+        }
+      }
+      .logo {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+
+  .about-section {
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 80%;
+
+    & > * {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .training-section {
+    height: 100%;
+
+    .card {
+      width: calc((100% - 1 * 5rem) / 1);
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    & div {
+      .links {
+        width: 45%;
+        .link {
+          font-size: small !important;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 2rem;
+    .footer-nav {
+      flex-direction: column;
+
+      .social-icons {
+        margin-bottom: 2rem;
+        svg {
+          height: 1.5rem;
+        }
+      }
+
+      .social-icon,
+      .nav-links {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .contact-section {
+    .contact-form-container {
+      .contact-form {
+        width: 95%;
+        overflow: hidden;
+        margin: 0 50%;
+        left: -35%;
+        position: relative;
+        label {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+
+  header.sticky-nav {
+    .link {
+      font-size: small !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    & div {
+      flex-direction: column;
+      padding: 0.4rem;
+      position: relative;
+
+      .links {
+        width: 100%;
+        .link {
+          font-size: small !important;
+        }
+      }
+      .logo-container {
+        position: absolute;
+        right: 3rem;
+        top: 1rem;
+
+        .logo {
+          height: 8rem;
+          width: 8rem;
+        }
+      }
+    }
+  }
+
+  .sticky-nav {
+    font-size: smaller;
+  }
+
+  .follow-section {
+    & .section-children {
+      iframe.facebook-widget {
+        width: 100%;
+      }
+    }
+  }
+}

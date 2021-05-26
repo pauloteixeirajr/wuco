@@ -1,0 +1,39 @@
+.contact-form-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+
+  .contact-form {
+    margin: 0 auto;
+
+    label {
+      display: flex;
+      padding: 0.5rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 65%;
+      padding: 7px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="checkbox"] {
+      margin: 10px 5px 10px 0;
+    }
+  }
+}
